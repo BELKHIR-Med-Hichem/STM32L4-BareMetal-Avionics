@@ -50,7 +50,12 @@ This project was built for the **STM32L432 / STM32L412** architecture running at
 | **PB7** | I2C1_SDA | I2C Data (IMU, BMP280, OLED) |
 
 ---
+## 📊 Extracting Flight Data
 
+[cite_start]To extract the raw binary blocks from your SD card and convert them into a clean CSV file as described in the technical report, use the provided Python utility:
+
+```bash
+python3 Tools/sd_to_csv.py -f telemetry_dump.bin -o flight_data.csv
 ## 📁 Repository Structure
 
 ```text
